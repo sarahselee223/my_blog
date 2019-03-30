@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+/* font-family: 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+/* font-family: 'Muli', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+/* font-family: 'Mukta', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Hind');
+/* font-family: 'Hind', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+/* font-family: 'Heebo', sans-serif; */
+
 .container {
     background: white;
     margin-bottom: 1.45rem;
@@ -11,11 +22,14 @@
     margin: 0 
 }
 .mainFont {
-    color: black;
+    font-family: 'Work Sans', sans-serif; 
+    color: darkgray;
     text-decoration: none;
     margin-right: 3%;
 }
 .subFont {
-    color: black;
-    margin-right: 2%;
+    font-family: 'Work Sans', sans-serif; 
+    color: darkgray;
+    text-decoration: none;
+    margin-right: 1.5%;
 }
