@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from '../styles/index.module.css'
-import robot1 from '../images/robot1.jpeg'
+import meBack from '../images/me-back.jpg'
 import githubLogo from '../images/github.png'
 import linkedinLogo from '../images/linkedin.png'
 import emailLogo from '../images/email.png'
@@ -28,21 +28,15 @@ class IndexImage extends Component {
                     <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                         <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
-                            <image href={robot1} alt="robot" x="-25" width="150" height="100" />
+                            <image href={meBack} alt="robot" x="-25" width="150" height="100" />
                         </pattern>
                         </defs>
-                        <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)" stroke="black" stroke-width="0.2%"/>
+                        <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
                     </svg>
                 </div>
-                <div className={styles.myName}>
-                    <span>Sarah S. Lee</span>
-                </div>
-                <div className={styles.myKoreanName}>
-                    <span>이 승 은</span>
-                </div>
-                <div className={styles.myTitle}>
-                    <span>Software Engineer</span>
-                </div>
+                <span className={styles.myName}> Sarah S. Lee</span>
+                {/* <span className={styles.myKoreanName}> 이 승 은 </span> */}
+                <span className={styles.myTitle}> Software Engineer </span>
                 <div>
                     <span className={styles.iconContainer}>
                         <img src={githubLogo} alt="githubLogo" height="35" width="35" onClick={() => this.handleGithub()}/>
@@ -53,6 +47,9 @@ class IndexImage extends Component {
                     <span className={styles.iconContainer}>
                         <img src={emailLogo} alt="emailLogo"height="35" width="35" onClick={() => this.handleEmail()}/>
                     </span>
+                </div>
+                <div>
+                    <span className={styles.smallTextContainer}>currently learning about GraphQL</span>
                 </div>
             </div>
         )
