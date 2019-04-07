@@ -22,6 +22,15 @@
     align-items: center;
     margin-top: 17%;
 }
+.introContainer {
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    font-size: 13px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+}
 .iconContainer {
     margin-top: 5px;
     margin-right: 3px;
@@ -31,19 +40,9 @@
     font-family: 'Avenir','Helvetica','Arial',sans-serif;
     font-size: 25px;
     font-weight: bold;
-    margin:0;
-    padding: 0;
 }
-.myKoreanName {
-    margin:0;
-    padding: 0;
-    color: gray;
-    font-family: 'Avenir','Helvetica','Arial',sans-serif;
-    font-size: 13px;
-}
+
 .myTitle {
-    margin:0;
-    padding: 0;
     font-size: 17px;
     font-family: 'Avenir','Helvetica','Arial',sans-serif;
 }
