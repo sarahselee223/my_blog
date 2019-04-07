@@ -33,16 +33,25 @@ class IndexImage extends Component {
         return (
             <div className={styles.container}>
                 <div className={styles.imageContainer}>
+                {this.state.openIntro ? 
+                    <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" onClick={() => this.toggleIntro()}>
+                        <defs>
+                            <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image href={meFront} x="-25" width="150" height="100"/>
+                            </pattern>
+                        </defs>
+                        <polygon className={styles.path} points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)">
+                        </polygon>
+                    </svg> :
                     <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" onClick={() => this.toggleIntro()}>
                         <defs>
                         <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
-                        {this.state.openIntro ? 
-                            <image href={meFront} alt="robot" x="-25" width="150" height="100"/>
-                            :<image href={meBack} alt="robot" x="-25" width="150" height="100"/>}  
+                            <image href={meBack} x="-25" width="150" height="100"/>
                         </pattern>
                         </defs>
-                        <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
-                    </svg>
+                        <polygon className={styles.path} points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)" stroke="#ffff1a">
+                        </polygon>
+                    </svg>}
                 </div>
                 <span className={styles.myName}> Sarah S. Lee</span>
                 <span className={styles.myTitle}> Software Engineer </span>

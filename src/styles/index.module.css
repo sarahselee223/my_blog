@@ -50,6 +50,16 @@
     font-family: 'Avenir','Helvetica','Arial',sans-serif;
     font-size: 13px
 }
+
 svg {
     width:60%;
 }
+.path {
+    stroke-dasharray: 150;
+    animation: dash 10s linear infinite;
+}
+@keyframes dash {
+    to {
+      stroke-dashoffset: 1000;
+    }
+  }
