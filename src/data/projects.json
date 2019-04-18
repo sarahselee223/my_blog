@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Space Socks",
+        "id": "1",
+        "slug": "space-socks",
+        "description": "<p>Get your feet into these spaced-out black socks with a Gatsby purple border and heel.</p>",
+        "price": "$10.00",
+        "image": "../images/robot1.jpeg"
+    },
+    {
+        "title": "Vintage Purple Tee",
+        "id": "2",
+        "slug": "vintage-purple-tee",
+        "description": "<p>Keep it simple with this vintage purple tee.</p>",
+        "price": "$10.00",
+        "image": "../images/me-front.jpg"
+    },
+    {
+        "title": "This Purple Hat Is Blazing Fast",
+        "id": "3",
+        "slug": "purple-hat",
+        "description": "<p>Add more blazingly blazing speed to your wardrobe with this solid purple laundered chino twill hat.</p>",
+        "price": "$10.00",
+        "image": "../images/me-back.jpg"
+    }
+]
