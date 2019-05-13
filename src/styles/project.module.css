@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+/* font-family: 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+/* font-family: 'Muli', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+/* font-family: 'Mukta', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Hind');
+/* font-family: 'Hind', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+/* font-family: 'Heebo', sans-serif; */
+
+.container {
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.title {
+    margin-top: 7%;
+    color: gray;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+}
+.subtitle {
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+}
+.description, .takeAway, .technology, .demo, .github {
+    color: gray;
+    font-size: 15px;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+}
