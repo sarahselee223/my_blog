@@ -1,26 +1,79 @@
 [
     {
-        "title": "Space Socks",
+        "title": "My Pet Pal",
         "id": "1",
-        "slug": "space-socks",
-        "description": "<p>Get your feet into these spaced-out black socks with a Gatsby purple border and heel.</p>",
-        "price": "$10.00",
-        "image": "../images/robot1.jpeg"
+        "subtitle": "iOS Application to keep track of your puppy's activities and well-being",
+        "description": "<p>React Native mobile app that enables users to collaboratively manage dog's daily activities. Worked on database design, backend APIs, front-end design, frontend and backend connection, error handling, and styling.</p>",
+        "takeAway": "Take Away: Building a polished iOS app with React Native / Improving user experience by implementing Keyboard Aware Scroll View / Handling numerous asynchronous actions",
+        "technology": "Technology: React Native, Redux, Expo, Node.js, Knex,  Ajax, PostgreSQL",
+        "image": "../images/banjo.png",
+        "demo": "https://youtu.be/-YDvsXGxs_Y",
+        "github":  "https://github.com/banjo-project/my_pet_pal"
     },
     {
-        "title": "Vintage Purple Tee",
+        "title": "My Pet Pal",
         "id": "2",
-        "slug": "vintage-purple-tee",
-        "description": "<p>Keep it simple with this vintage purple tee.</p>",
-        "price": "$10.00",
-        "image": "../images/me-front.jpg"
+        "subtitle": "iOS Application to keep track of your puppy's activities and well-being",
+        "description": "<p> MyPetPal is your solution to staying on top of your dog's daily activities. Stay updated on what your dog is up to, whether they are sleeping, walking, pottying, eating, etc. You can invite others to work together with you to ensure that your dog or dogs are well taken care of.</p>",
+        "takeAway": "what I learn",
+        "technology": "react native",
+        "image": "../images/banjo.png",
+        "demo": "<p>Demo: https://youtu.be/-YDvsXGxs_Y</p> <p>Technology: </p>",
+        "github":  "<p>frontend: https://github.com/banjo-project/my_pet_pal_frontend</p> <p>backend: https://github.com/banjo-project/my_pet_pal_backend</p>"
     },
     {
-        "title": "This Purple Hat Is Blazing Fast",
+        "title": "My Pet Pal",
         "id": "3",
-        "slug": "purple-hat",
-        "description": "<p>Add more blazingly blazing speed to your wardrobe with this solid purple laundered chino twill hat.</p>",
-        "price": "$10.00",
-        "image": "../images/me-back.jpg"
+        "subtitle": "aaa",
+        "description": "<p> MyPetPal is your solution to staying on top of your dog's daily activities. Stay updated on what your dog is up to, whether they are sleeping, walking, pottying, eating, etc. You can invite others to work together with you to ensure that your dog or dogs are well taken care of.</p>",
+        "takeAway": "",
+        "technology": "iOS Application to keep track of your puppy's activities and well-being",
+        "image": "../images/banjo.png",
+        "demo": "<p>Demo: https://youtu.be/-YDvsXGxs_Y</p> <p>Technology: </p>",
+        "github":  "<p>frontend: https://github.com/banjo-project/my_pet_pal_frontend</p> <p>backend: https://github.com/banjo-project/my_pet_pal_backend</p>"
+    },
+    {
+        "title": "My Pet Pal",
+        "id": "4",
+        "subtitle": "aaa",
+        "description": "<p> MyPetPal is your solution to staying on top of your dog's daily activities. Stay updated on what your dog is up to, whether they are sleeping, walking, pottying, eating, etc. You can invite others to work together with you to ensure that your dog or dogs are well taken care of.</p>",
+        "takeAway": "",
+        "technology": "iOS Application to keep track of your puppy's activities and well-being",
+        "image": "../images/banjo.png",
+        "demo": "<p>Demo: https://youtu.be/-YDvsXGxs_Y</p> <p>Technology: </p>",
+        "github":  "<p>frontend: https://github.com/banjo-project/my_pet_pal_frontend</p> <p>backend: https://github.com/banjo-project/my_pet_pal_backend</p>"
+    },
+    {
+        "title": "My Pet Pal",
+        "id": "5",
+        "subtitle": "aaa",
+        "description": "<p> MyPetPal is your solution to staying on top of your dog's daily activities. Stay updated on what your dog is up to, whether they are sleeping, walking, pottying, eating, etc. You can invite others to work together with you to ensure that your dog or dogs are well taken care of.</p>",
+        "takeAway": "",
+        "technology": "iOS Application to keep track of your puppy's activities and well-being",
+        "image": "../images/banjo.png",
+        "demo": "<p>Demo: https://youtu.be/-YDvsXGxs_Y</p> <p>Technology: </p>",
+        "github":  "<p>frontend: https://github.com/banjo-project/my_pet_pal_frontend</p> <p>backend: https://github.com/banjo-project/my_pet_pal_backend</p>"
+    },
+    {
+        "title": "My Pet Pal",
+        "id": "6",
+        "subtitle": "aaa",
+        "description": "<p> MyPetPal is your solution to staying on top of your dog's daily activities. Stay updated on what your dog is up to, whether they are sleeping, walking, pottying, eating, etc. You can invite others to work together with you to ensure that your dog or dogs are well taken care of.</p>",
+        "takeAway": "",
+        "technology": "iOS Application to keep track of your puppy's activities and well-being",
+        "image": "../images/banjo.png",
+        "demo": "<p>Demo: https://youtu.be/-YDvsXGxs_Y</p> <p>Technology: </p>",
+        "github":  "<p>frontend: https://github.com/banjo-project/my_pet_pal_frontend</p> <p>backend: https://github.com/banjo-project/my_pet_pal_backend</p>"
+    },
+    {
+        "title": "My Pet Pal",
+        "id": "7",
+        "subtitle": "aaa",
+        "description": "<p> MyPetPal is your solution to staying on top of your dog's daily activities. Stay updated on what your dog is up to, whether they are sleeping, walking, pottying, eating, etc. You can invite others to work together with you to ensure that your dog or dogs are well taken care of.</p>",
+        "takeAway": "",
+        "technology": "iOS Application to keep track of your puppy's activities and well-being",
+        "image": "../images/banjo.png",
+        "demo": "<p>Demo: https://youtu.be/-YDvsXGxs_Y</p> <p>Technology: </p>",
+        "github":  "<p>frontend: https://github.com/banjo-project/my_pet_pal_frontend</p> <p>backend: https://github.com/banjo-project/my_pet_pal_backend</p>"
     }
 ]

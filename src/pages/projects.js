@@ -1,7 +1,6 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Image from "gatsby-image"
 import SEO from "../components/seo"
 import Project from "../components/project"
 
@@ -11,8 +10,12 @@ query {
     edges {
       node {
         title
+        subtitle
         description
-        price
+        takeAway
+        technology
+        demo
+        github
         image {
           childImageSharp {
               fluid{
@@ -29,10 +32,8 @@ query {
 const Projects = ({ data }) => {
   return (
     <Layout>
+        <h1>Projects</h1>
         <SEO title="Projects" />
-        <h1>Hi from the third page</h1>
-        <p>There are going to be portfolios</p>
-        <Link to="/">Go back to the homepage</Link>
         {  data.allProjectsJson.edges.map(edge => <Project {...edge.node}/>)}
       </Layout>
     )
