@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+/* font-family: 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+/* font-family: 'Muli', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+/* font-family: 'Mukta', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Hind');
+/* font-family: 'Hind', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+/* font-family: 'Heebo', sans-serif; */
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.contentContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.titleContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

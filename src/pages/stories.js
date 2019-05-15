@@ -1,16 +1,43 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Story from "../components/story"
+import styles from '../styles/story.module.css'
 
-const Projects = () => (
-  <Layout>
-    <SEO title="Stories" />
-    <h1>Hi from the story page</h1>
-    <p>There are going to be stories</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+export const query = graphql`
+query {
+  allStoriesJson {
+    edges {
+      node {
+        title
+        date
+        contents
+        image {
+          childImageSharp {
+              fluid{
+                  ...GatsbyImageSharpFluid
+             }
+           }
+        }
+      }
+    }
+  }
+}
+`
 
-export default Projects
+const Stories = ({ data }) => {
+  return (
+    <Layout>
+      <div className={styles.container}>
+        <div className={styles.story}>
+          <h1>S T O R I E S</h1>
+        </div>
+        <SEO title="Stories" />
+          { data.allStoriesJson.edges.map(edge => <Story {...edge.node}/>) }      
+      </div>
+    </Layout>
+  )
+}
+
+export default Stories
