@@ -55,17 +55,17 @@ class IndexImage extends Component {
                     }
                 </div>
                 <span className={styles.myName}> Sarah S. Lee</span>
-                <span className={styles.myTitle}> Software Engineer </span>
+                <span className={styles.myTitle}> Software Developer </span>
                 {this.state.openIntro ? 
                     <div className ={styles.introContainer}>
                         <p> Hi, I'm Sarah. I love challenging myself and learning new things. I studied law in South Korea and then came to the US in 2012 to further my career. After that, I worked as certified paralegal in Seattle. I enjoyed my previous job because I loved helping immigrants and small business owners. Throughout my work in various law firms, I often felt like there were many areas in the legal field which could be greatly benefited by the use of technology. </p>
                         <p> I started learning coding on my own and found out that I really love coding and solving problems! So, I quit my comfortable full time job and completed a web development immersive program at Galvanize. </p>
                         <p> I am currently working on a mobile application called "My Pet Pal." You can check out the projects that I have worked on <Link to="/projects/">here</Link>. I write lots of JavaScript and have a lot of passion for web and mobile development. I like building interactive application, UI/UX, React, and Redux. </p>
-                        <p> I would like to share my story and my journey of learning through this website. I have faced many unique challenges because I learned how to code in English, which is my second language (I call this "language inception"). Whenever imposter syndrome hits me, I try to record my wins (which I consider to be any problems that I solve) everyday. I hope my <Link to="/stories/">story</Link> can be helpful to anyone who is facing similar challenges. </p>
+                        <p> I would like to share my story and my journey of learning through this website. I have faced many unique challenges because I learned how to code in English, which is my second language (I call this "language inception"). I hope my <Link to="/stories/">story</Link> can be helpful to anyone who is facing similar challenges. </p>
                     </div> : null
                 }
 
-                <div>
+                <div className={styles.iconTopContainer}>
                     <span className={styles.iconContainer}>
                         <img src={githubLogo} alt="githubLogo" height="35" width="35" onClick={() => this.handleGithub()}/>
                     </span>
@@ -76,6 +76,10 @@ class IndexImage extends Component {
                         <img src={emailLogo} alt="emailLogo"height="35" width="35" onClick={() => this.handleEmail()}/>
                     </span>
                 </div>
+                {!this.state.openIntro ? 
+                <div>
+                    <p className={styles.learningText}>currently learning about Swift</p>
+                </div>: null}
             </div>
         )
     }
