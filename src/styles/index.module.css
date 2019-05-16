@@ -68,6 +68,10 @@ svg {
     font-family: 'Avenir','Helvetica','Arial',sans-serif;
     font-size: 13px
 }
+.linkFont{
+    color: rgb(78, 132, 233)
+}
+
 @keyframes dash {
     to {
       stroke-dashoffset: 1000;
