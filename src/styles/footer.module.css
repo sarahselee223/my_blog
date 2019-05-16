@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+/* font-family: 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+/* font-family: 'Muli', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+/* font-family: 'Mukta', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Hind');
+/* font-family: 'Hind', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+/* font-family: 'Heebo', sans-serif; */
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+    font-size: 13px;
+}
+.subFont {
+    color: rgb(78, 132, 233)
+}
