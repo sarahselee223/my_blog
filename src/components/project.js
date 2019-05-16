@@ -34,6 +34,7 @@ class Project extends Component {
           width="230" height="408"
           src={this.props.videoSrcURL}
           title={this.props.videoTitle}
+          style={{margin: "1rem"}}
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           frameBorder="0"
           webkitallowfullscreen="true"
@@ -44,7 +45,7 @@ class Project extends Component {
           <Image
             fluid={this.props.image.childImageSharp.fluid}
             alt={this.props.title}
-            style={{ float: "left", marginRight: "1rem", width: "350px" }}
+            style={{ float: "left", margin: "1rem", width: "350px" }}
           />
         </div>
         }
