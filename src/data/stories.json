@@ -2,15 +2,15 @@
     {
         "title": "Imposter Syndrome",
         "id": "2",
-        "date": "05-14-2019",
-        "image": "../images/taskmanger.png",
-        "contents": "test"
+        "date": "05-16-2019",
+        "image": "../images/selfdoubt.jpg",
+        "description": "<p>I learned this term during my second month at Galvanize. Before even hearing of imposter syndrome, I had already experienced feeling like a fraud when I couldn't solve problems, but I believed that it was just me. Throughout my whole life, I have never been good at mathematics. Seeing other people's genius solutions for some algorithm problems that I couldn’t solve always made me feel shitty about myself. On top of that, it was very hard for me to fully understand abstract computer science concepts in English. I can't even explain how awkward the silence was when I couldn't answer some seemingly easy questions in class.</p> <p>I heard of imposter syndrome for the first time from one of my classmates. I was talking to this classmate about my extreme frustration with coding and I heard that another classmate was experiencing the same feelings as me. It was pretty shocking to me that this is actually a really prominent concept among software engineers. </p><p>There are many articles about how to overcome imposter syndrome. For me, it is really helpful to keep track of the problems that I solve on my own even though they are really small and minor problems. Focusing on what I build instead of focusing on how good I am has also helped me to forget about my frustration with feeling like I'm behind. Angela Duckworth’s famous book Grit explains why we should focus on persistence, undaunted courage and a refusal to back down in the face of adversity rather than our natural talent. Lastly, being surrounded by positive people who strongly believe in me has been helpful for me to overcome imposter syndrome. I have met some software engineers who looked down on me for many reasons. Life is short. It makes me a better person if I do something positive rather than spending my precious time being resentful of someone I will never see again. I am really lucky to have people in my life who support and believe in me. I hope that I can be one of those supporters for someone else who is facing similar challenges.</p>"
     },
     {
-        "title": "Why do I choose to become a software developer?",
+        "title": "Picking Chestnuts",
         "id": "1",
         "date": "05-14-2019",
-        "image": "../images/taskmanger.png",
-        "contents": "test"
+        "image": "../images/chestnut.jpg",
+        "description": "<p>I have never really thought about the relationship between pain and gain until I start studying coding. After feeling miserable and spending several nights secretly weeping because of problems I couldn’t solve, I slowly accepted that this painful time is a natural part of becoming a better developer. Of course, there are some genius kinds of people who are naturally talented with programming. However, I'm sure they will experience similar pain once they develop new skills which they have never practiced before. People compare coding to learning a new language, but for me it was more like building new muscles. When I started going to the gym, my muscles were sore for weeks and it almost killed me. However, without experiencing DOMS (Delayed Onset Muscle Soreness) you can’t really tell whether or not your muscles are really growing. My personal trainer back in Korea once told me that he is jealous of me for having this horrible DOMS because this pain is clear proof that my muscles are getting stronger. Likewise, I discovered that the more miserable I am when solving problems, the better my understanding becomes after solving them.<p/><p>”You won’t know the taste of a chestnut until you have been pricked by its thorns.” (가시에 찔려봐야 밤맛을 안다). This is an old Korean proverb which means that you will really appreciate and enjoy what you gain from going through lots of pain in order to achieve something. I've always dreamed of just easily picking up chestnuts without thorns. However, I have come to truly understand this simple life lesson that there's no growth without pain by studying coding. </p>" 
     }
 ]

@@ -36,8 +36,10 @@
     margin-bottom: 2%;
     font-family: 'Avenir','Helvetica','Arial',sans-serif;
 }
+.iconTopContainer {
+    margin-top: 2%;
+}
 .iconContainer {
-    margin-top: 5px;
     margin-right: 3px;
     margin-left: 3px;
 }
@@ -61,6 +63,10 @@ svg {
 .path {
     stroke-dasharray: 150;
     animation: dash 10s linear infinite;
+}
+.learningText{
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+    font-size: 13px
 }
 @keyframes dash {
     to {

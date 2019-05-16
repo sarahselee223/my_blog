@@ -9,32 +9,40 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo');
 /* font-family: 'Heebo', sans-serif; */
 
-.container {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 5%;
-}
-.projectContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-}
-.contentContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+.container{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .titleContainer {
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
+}
+.dateContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
 }
 .story {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.title {
+    color: #9B9898;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+}
+.description, .takeAway, .technology, .demo, .github {
+    color: gray;
+    font-size: 15px;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+}
+.instruction {
+    font-size: 12px;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+}
+.icon {
+    margin-right: 3%;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-//import styles from '../styles/story.module.css'
+import Image from "gatsby-image"
+import styles from '../styles/story.module.css'
 
 class Story extends Component {
   constructor(props){
@@ -7,12 +8,34 @@ class Story extends Component {
     this.state = {
     }
   }
+  
 
   render(){
-      console.log(this.props)
     return (
-        <div>
-            <p>{this.props.title}</p>
+        <div className={styles.container}>
+            <div className={styles.titleContainer}>
+                <h2 className={styles.title}>{this.props.title}</h2>
+            </div>
+            <div className={styles.dateContainer}>
+                <p className={styles.description}>{this.props.date}</p>
+            </div>
+            <div>
+                { this.props.id%2 !== 0 ? 
+                <Image
+                    fluid={this.props.image.childImageSharp.fluid}
+                    alt={this.props.title}
+                    style={{ float: "left", margin: "1rem", width: "350px" }}
+                />
+                :
+                <Image
+                    fluid={this.props.image.childImageSharp.fluid}
+                    alt={this.props.title}
+                    style={{ float: "right", margin: "1rem", width: "350px" }}
+                />
+                }
+                
+                <div dangerouslySetInnerHTML={{ __html: this.props.description }} className={styles.description}/>
+            </div>
         </div>
     )
   }
