@@ -1,8 +1,18 @@
+# My Portfolio
 
-**Start developing.**
+Single page web application to share personal projects and posts. 
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+## Deployed
+
+http://sarahselee_portfolio.surge.sh/
+
+
+## Developing **
+
+```
+sh
+cd my-default-starter/
+gatsby develop
+
+```
 
