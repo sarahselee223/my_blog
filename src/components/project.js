@@ -9,22 +9,15 @@ class Project extends Component {
     this.state = {
     }
   }
-  handleLink = () => {
-    window.location= this.props.demo
-  }
-  handleGithub = () => {
-    window.location=this.props.github
-}
 
   render(){
     return (
       <div className={styles.projectContainer}>
         <div className={styles.titleContainer}>
-        <Image
+          <Image
             fluid={this.props.icon.childImageSharp.fluid}
             alt={this.props.title}
-            style={{ float: "left", marginRight: "1rem", marginBottom: "10%", width: "40px" }}
-          />
+            style={{ float: "left", marginRight: "1rem", marginBottom: "10%", width: "40px" }}/>
           <h2 className={styles.title}>{this.props.title}</h2>
         </div>
       <div className={styles.contentContainer}>
@@ -41,19 +34,25 @@ class Project extends Component {
           mozallowfullscreen="true"
           allowFullScreen
         />:
-        <div onClick={() => this.handleLink()}>
-          <Image
-            fluid={this.props.image.childImageSharp.fluid}
-            alt={this.props.title}
-            style={{ float: "left", margin: "1rem", width: "350px" }}
-          />
+        <div>
+          <a href={this.props.demo} target="_blank" title={this.props.title}>
+            <Image
+              fluid={this.props.image.childImageSharp.fluid}
+              alt={this.props.title}
+              style={{ float: "left", margin: "1rem", width: "350px" }}
+            />
+          </a>
         </div>
         }
           
         </div>
         <div className={styles.projectContents}>
           <div className={styles.titleContainer}>
-            {this.props.github? <img className={styles.icon} src={githubLogo} alt="githubLogo" height="40" width="40" onClick={() => this.handleGithub()}/> : null}
+            {this.props.github? 
+              <a href={this.props.github} target="_blank" title="Sarah Lee's GitHub">
+                <img src={githubLogo} alt="githubLogo" height="40" width="40"/> 
+              </a>
+            : null}
             <p className={styles.subtitle}>{this.props.subtitle}</p>
           </div>
           <div dangerouslySetInnerHTML={{ __html: this.props.description }} className={styles.description}/>

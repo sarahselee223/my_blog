@@ -3,12 +3,14 @@ import styles from '../styles/footer.module.css'
 
 const Footer = () => (
   <footer className={styles.container}>
-    <p>© 2019 <span className={styles.subFont} onClick={() => handleLinkedin()}>Sarah S. Lee</span></p>
+    <p>© 2019 &nbsp; 
+        <span className={styles.subFont}>
+            <a href="mailto:sarahselee223@gmail.com" title="Sarah Lee's Email">
+                Sarah S. Lee
+            </a>
+        </span>
+    </p>
   </footer>
 )
-
-const handleLinkedin = () => {
-    window.location='https://www.linkedin.com/in/sarah-se-lee/'
-}
 
 export default Footer

@@ -14,15 +14,7 @@ class IndexImage extends Component {
             openIntro: false
         }
     }
-    handleGithub = () => {
-        window.location='https://github.com/sarahselee223'
-    }
-    handleLinkedin = () => {
-        window.location='https://www.linkedin.com/in/sarah-se-lee/'
-    }
-    handleEmail = () => {
-        window.location.href = "mailto:sarahselee223@gmail.com";
-    }
+
     toggleIntro = () => {
         this.setState({
             openIntro: !this.state.openIntro
@@ -46,7 +38,7 @@ class IndexImage extends Component {
                     <svg className={styles.imageContainer2} viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" onClick={() => this.toggleIntro()}>
                         <defs>
                         <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
-                            <image href={meBack} x="-25" width="150" height="100" title="title"/>
+                            <image href={meBack} x="-25" width="150" height="100" title="click to see more about me"/>
                         </pattern>
                         </defs>
                         <polygon className={styles.path} points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)" stroke="#ffff1a">
@@ -67,13 +59,19 @@ class IndexImage extends Component {
 
                 <div className={styles.iconTopContainer}>
                     <span className={styles.iconContainer}>
-                        <img src={githubLogo} alt="githubLogo" height="35" width="35" onClick={() => this.handleGithub()}/>
+                        <a href="https://github.com/sarahselee223" target="_blank" title="Sarah Lee's GitHub">
+                            <img src={githubLogo} alt="GitHub Logo" height="35" width="35" />
+                        </a>
                     </span>
                     <span className={styles.iconContainer}>
-                        <img src={linkedinLogo} alt="linkedinLogo" height="35" width="35" onClick={() => this.handleLinkedin()}/>
+                        <a href="https://www.linkedin.com/in/sarah-se-lee/" target="_blank" title="Sarah Lee's LinkedIn">
+                            <img src={linkedinLogo} alt="linkedinLogo" height="35" width="35" />
+                        </a>
                     </span>
                     <span className={styles.iconContainer}>
-                        <img src={emailLogo} alt="emailLogo"height="35" width="35" onClick={() => this.handleEmail()}/>
+                        <a href="mailto:sarahselee223@gmail.com" title="Sarah Lee's Email">
+                            <img src={emailLogo} alt="emailLogo"height="35" width="35" />
+                        </a>
                     </span>
                 </div>
                 {!this.state.openIntro ? 
