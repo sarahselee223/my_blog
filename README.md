@@ -7,7 +7,7 @@ Single page web application to share personal projects and posts.
 http://sarahselee_portfolio.surge.sh/
 
 
-## Developing **
+## Start Developing 
 
 ```
 sh
