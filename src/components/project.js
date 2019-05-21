@@ -55,9 +55,9 @@ class Project extends Component {
                 : null}
                 <p className={styles.subtitle}>{this.props.subtitle}</p>
               </div>
-              <div dangerouslySetInnerHTML={{ __html: this.props.description }} className={styles.description}/>
-              <p className={styles.takeAway}>{this.props.takeAway}</p>
-              <p className={styles.technology}>
+              <div dangerouslySetInnerHTML={{ __html: this.props.description }} className={styles.descriptionMobile}/>
+              <p className={styles.takeAwayMobile}>{this.props.takeAway}</p>
+              <p className={styles.technologyMobile}>
                 <span>Technology: </span>
                   {this.props.technology} 
               </p>
