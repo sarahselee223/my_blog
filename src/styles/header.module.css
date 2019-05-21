@@ -19,7 +19,7 @@
     padding: 1.45rem 1.0875rem;
 }
 .titleStyle { 
-    margin: 0 
+    margin: 1%
 }
 .mainFont {
     font-family: 'Work Sans', sans-serif; 
@@ -31,5 +31,11 @@
     font-family: 'Work Sans', sans-serif; 
     color: darkgray;
     text-decoration: none;
-    margin-right: 1.5%;
+    margin-right: 2%;
+}
+.subFontMobile {
+    font-family: 'Work Sans', sans-serif; 
+    color: darkgray;
+    text-decoration: none;
+    margin-right: 4%;
 }

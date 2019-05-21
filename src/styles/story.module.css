@@ -12,8 +12,8 @@
 .container{
     margin-left: 4%;
     margin-right: 4%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 .titleContainer {
     display: flex;
@@ -34,9 +34,14 @@
     color: #9B9898;
     font-family: 'Avenir','Helvetica','Arial',sans-serif;
 }
-.description, .takeAway, .technology, .demo, .github {
+.description {
     color: gray;
     font-size: 15px;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+}
+.descriptionMobile {
+    color: gray;
+    font-size: 13px;
     font-family: 'Avenir','Helvetica','Arial',sans-serif;
 }
 .instruction {
