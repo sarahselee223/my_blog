@@ -19,7 +19,7 @@ class Story extends Component {
                 <p className={styles.description}>{this.props.date}</p>
             </div>
             <div>
-                {window.innerWidth < 520? 
+                {typeof window !== 'undefined' && window.innerWidth < 520? 
                         <Image
                             fluid={this.props.image.childImageSharp.fluid}
                             alt={this.props.title}
@@ -38,7 +38,7 @@ class Story extends Component {
                             style={{ float: "right", margin: "1rem", width: "350px" }}
                         />
                 }
-                {window.innerWidth < 520? 
+                {typeof window !== 'undefined' && window.innerWidth < 520? 
                     <div dangerouslySetInnerHTML={{ __html: this.props.description }} className={styles.descriptionMobile}/>
                 :
                     <div dangerouslySetInnerHTML={{ __html: this.props.description }} className={styles.description}/>

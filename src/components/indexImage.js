@@ -49,7 +49,7 @@ class IndexImage extends Component {
                 <span className={styles.myName}> Sarah S. Lee</span>
                 <span className={styles.myTitle}> Software Developer </span>
                 {this.state.openIntro ? 
-                    window.innerWidth < 520 ? 
+                    typeof window !== 'undefined' && window.innerWidth < 520 ? 
                       <div className ={styles.introContainerMobile}>
                         <p> Hi, I'm Sarah. I love challenging myself and learning new things. I studied law in South Korea and then came to the US in 2012 to further my career. After that, I worked as certified paralegal in Seattle. I enjoyed my previous job because I loved helping immigrants and small business owners. Throughout my work in various law firms, I often felt like there were many areas in the legal field which could be greatly benefited by the use of technology. </p>
                         <p> I started learning coding on my own and found out that I really love coding and solving problems! So, I quit my comfortable full time job and completed a web development immersive program at Galvanize. </p>

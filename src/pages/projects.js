@@ -47,7 +47,7 @@ const Projects = ({ data }) => {
         <div className={styles.project}>
           <h1>P R O J E C T S</h1>
         </div>
-        {window.innerWidth < 520 ?
+        {typeof window !== 'undefined' && window.innerWidth < 520 ?
           null
           :
           <div className={styles.instructionContainer}>

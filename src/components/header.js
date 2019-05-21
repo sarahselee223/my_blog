@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
   <header className={styles.container}>
     <div className={styles.margin}>
       <h4 className={styles.titleStyle}>
-        {window.innerWidth < 500 ?
+        {typeof window !== 'undefined' && window.innerWidth < 500 ?
           <div>
             <Link to="/" className={styles.subFontMobile}>{siteTitle}</Link>
             <Link to="/projects/" className={styles.subFontMobile}>Projects</Link>

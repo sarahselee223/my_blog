@@ -20,7 +20,7 @@ class Project extends Component {
             style={{ float: "left", marginRight: "1rem", marginBottom: "10%", width: "40px" }}/>
           <h2 className={styles.title}>{this.props.title}</h2>
         </div>
-        {window.innerWidth < 520? 
+        {typeof window !== 'undefined' && window.innerWidth < 520? 
           <div className={styles.contentContainerMobile}>
             <div className={styles.imageContainerMobile}>
             {this.props.videoSrcURL? 
