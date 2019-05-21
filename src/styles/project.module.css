@@ -29,6 +29,11 @@
     align-items: center;
     flex-direction: row;
 }
+.contentContainerMobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .titleContainer {
     display: flex;
     align-items: center;
@@ -38,9 +43,17 @@
     flex: 3;
     flex-direction: column;
 }
+.imageContainerMobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .instructionContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.instructionContainerMobile {
     align-items: center;
 }
 .projectContents {
@@ -48,6 +61,9 @@
     margin-left: 2%;
     margin-top: 2%;
     flex-direction: column;
+}
+.projectContentsMobile {
+    margin: 3%;
 }
 .project {
     display: flex;

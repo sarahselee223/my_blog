@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 17%;
+    margin-bottom: 1%;
 }
 .imageContainer2 {
     display: flex;
@@ -33,6 +34,15 @@
     width: 40%;
     font-size: 13px;
     margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+}
+.introContainerMobile {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    font-size: 13px;
+    margin-top: 4%;
     margin-bottom: 2%;
     font-family: 'Avenir','Helvetica','Arial',sans-serif;
 }

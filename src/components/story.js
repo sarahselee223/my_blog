@@ -9,7 +9,6 @@ class Story extends Component {
     }
   }
   
-
   render(){
     return (
         <div className={styles.container}>
@@ -20,21 +19,31 @@ class Story extends Component {
                 <p className={styles.description}>{this.props.date}</p>
             </div>
             <div>
-                { this.props.id%2 !== 0 ? 
-                <Image
-                    fluid={this.props.image.childImageSharp.fluid}
-                    alt={this.props.title}
-                    style={{ float: "left", margin: "1rem", width: "350px" }}
-                />
+                {window.innerWidth < 520? 
+                        <Image
+                            fluid={this.props.image.childImageSharp.fluid}
+                            alt={this.props.title}
+                            style={{ margin: "0 auto", width: "87%", marginBottom: "10%" }}
+                        />
+                    :this.props.id%2 !== 0 ? 
+                        <Image
+                            fluid={this.props.image.childImageSharp.fluid}
+                            alt={this.props.title}
+                            style={{ float: "left", margin: "1rem", width: "350px" }}
+                        />
+                    :
+                        <Image
+                            fluid={this.props.image.childImageSharp.fluid}
+                            alt={this.props.title}
+                            style={{ float: "right", margin: "1rem", width: "350px" }}
+                        />
+                }
+                {window.innerWidth < 520? 
+                    <div dangerouslySetInnerHTML={{ __html: this.props.description }} className={styles.descriptionMobile}/>
                 :
-                <Image
-                    fluid={this.props.image.childImageSharp.fluid}
-                    alt={this.props.title}
-                    style={{ float: "right", margin: "1rem", width: "350px" }}
-                />
+                    <div dangerouslySetInnerHTML={{ __html: this.props.description }} className={styles.description}/>
                 }
                 
-                <div dangerouslySetInnerHTML={{ __html: this.props.description }} className={styles.description}/>
             </div>
         </div>
     )
