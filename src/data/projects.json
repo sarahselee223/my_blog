@@ -85,7 +85,7 @@
         "subtitle": "Prototype local bookstore app",
         "description": "<p> This is a prototype local bookstore app for managing book inventory, search for books, and checkout books.</p>",
         "takeAway": "",
-        "technology": "JavaScript, React, Bootstrap",
+        "technology": "JavaScript, React, Bootstrap, Ajax",
         "image": "../images/bookstore.png",
         "icon": "../images/books.png",
         "demo": "https://nameless-citadel-70518.herokuapp.com/",
