@@ -10,10 +10,9 @@ query {
   allStoriesJson {
     edges {
       node {
-        id
         title
+        id
         date
-        description
         image {
           childImageSharp {
               fluid{
@@ -21,6 +20,7 @@ query {
              }
            }
         }
+        description
       }
     }
   }
