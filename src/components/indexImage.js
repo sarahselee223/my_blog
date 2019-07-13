@@ -51,15 +51,13 @@ class IndexImage extends Component {
                 {this.state.openIntro ? 
                     typeof window !== 'undefined' && window.innerWidth < 520 ? 
                       <div className ={styles.introContainerMobile}>
-                        <p> Hi, I'm Sarah. I love challenging myself and learning new things. I studied law in South Korea and then came to the US in 2012 to further my career. After that, I worked as certified paralegal in Seattle. I enjoyed my previous job because I loved helping immigrants and small business owners. Throughout my work in various law firms, I often felt like there were many areas in the legal field which could be greatly benefited by the use of technology. </p>
-                        <p> I started learning coding on my own and found out that I really love coding and solving problems! So, I quit my comfortable full time job and completed a web development immersive program at Galvanize. </p>
-                        <p> I am currently working on a mobile application called "My Pet Pal." You can check out the projects that I have worked on <Link to="/projects/" className={styles.linkFont}>here</Link>. I write lots of JavaScript and have a lot of passion for web and mobile development. I like building interactive application, UI/UX, React, and Redux. </p>
+                        <p> Hi, I'm Sarah. I love challenging myself and learning new things. I am currently learning about Swift and Xcode. I work on an iOS application called “Book Domicile” as a mobile software developer intern at Domicile. I maintain and update the app ranging from visual UI/UX enhancements to major pieces of functionality that involve GraphQL queries. You can check out the app at <a className={styles.linkFont} href="https://apps.apple.com/us/app/book-domicile/id1372934088">iOS App Store</a>. </p>
+                        <p> I also worked on a mobile application called "My Pet Pal." You can check out my previous and current personal projects at <Link to="/projects/" className={styles.linkFont}>Projects</Link>. I write lots of JavaScript and have a lot of passion for web and mobile development. I like building interactive application, UI/UX, React, Redux and Native iOS apps. </p>
                         <p> I would like to share my story and my journey of learning through this website. I have faced many unique challenges because I learned how to code in English, which is my second language (I call this "language inception"). I hope my <Link to="/stories/" className={styles.linkFont}>story</Link> can be helpful to anyone who is facing similar challenges. </p>
                       </div>
                     : <div className ={styles.introContainer}>
-                        <p> Hi, I'm Sarah. I love challenging myself and learning new things. I studied law in South Korea and then came to the US in 2012 to further my career. After that, I worked as certified paralegal in Seattle. I enjoyed my previous job because I loved helping immigrants and small business owners. Throughout my work in various law firms, I often felt like there were many areas in the legal field which could be greatly benefited by the use of technology. </p>
-                        <p> I started learning coding on my own and found out that I really love coding and solving problems! So, I quit my comfortable full time job and completed a web development immersive program at Galvanize. </p>
-                        <p> I am currently working on a mobile application called "My Pet Pal." You can check out the projects that I have worked on <Link to="/projects/" className={styles.linkFont}>here</Link>. I write lots of JavaScript and have a lot of passion for web and mobile development. I like building interactive application, UI/UX, React, and Redux. </p>
+                        <p> Hi, I'm Sarah. I love challenging myself and learning new things. I am currently learning about Swift and Xcode. I work on an iOS application called “Book Domicile” as a mobile software developer intern at Domicile. I maintain and update the app ranging from visual UI/UX enhancements to major pieces of functionality that involve GraphQL queries. You can check out the app at <a className={styles.linkFont} href="https://apps.apple.com/us/app/book-domicile/id1372934088">iOS App Store</a>. </p>
+                        <p> I also worked on a mobile application called "My Pet Pal." You can check out my previous and current personal projects at <Link to="/projects/" className={styles.linkFont}>Projects</Link>. I write lots of JavaScript and have a lot of passion for web and mobile development. I like building interactive application, UI/UX, React, Redux and Native iOS apps. </p>
                         <p> I would like to share my story and my journey of learning through this website. I have faced many unique challenges because I learned how to code in English, which is my second language (I call this "language inception"). I hope my <Link to="/stories/" className={styles.linkFont}>story</Link> can be helpful to anyone who is facing similar challenges. </p>
                     </div> : null
                 }
@@ -83,7 +81,7 @@ class IndexImage extends Component {
                 </div>
                 {!this.state.openIntro ? 
                 <div>
-                    <p className={styles.learningText}>currently learning about Swift</p>
+                    <p className={styles.learningText}>currently learning about Swift, Xcode and GraphQL</p>
                 </div>: null}
             </div>
         )
