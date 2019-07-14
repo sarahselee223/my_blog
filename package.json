@@ -36,7 +36,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "clean": "rm -rf .cache",
+    "deploy": "surge public sarahlee.life",
+    "clean": "gatsby clean && rm -rf .cache",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
