@@ -37,11 +37,15 @@ class Project extends Component {
               />:
               <div>
                 <a href={this.props.demo} target="_blank" title={this.props.title}>
-                  <Image
+                  {this.props.imagePortrait ? 
+                    <Image fluid={this.props.image.childImageSharp.fluid}
+                    alt={this.props.title}
+                    style={{ float: "left", margin: "1rem", width: "200px", height: "400px" }}/> :
+                    <Image
                     fluid={this.props.image.childImageSharp.fluid}
                     alt={this.props.title}
                     style={{ float: "left", margin: "1rem", width: "250px" }}
-                  />
+                    />}
                 </a>
               </div>
               }
@@ -80,11 +84,18 @@ class Project extends Component {
               />:
               <div>
                 <a href={this.props.demo} target="_blank" title={this.props.title}>
-                  <Image
+                {this.props.id == "10" ?
+                 <Image
+                    fluid={this.props.image.childImageSharp.fluid}
+                    alt={this.props.title}
+                    style={{ float: "left", margin: "1rem", width: "230px" }}
+                 />:
+                 <Image
                     fluid={this.props.image.childImageSharp.fluid}
                     alt={this.props.title}
                     style={{ float: "left", margin: "1rem", width: "350px" }}
                   />
+                }
                 </a>
               </div>
               }

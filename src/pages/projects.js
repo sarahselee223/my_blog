@@ -11,6 +11,7 @@ query {
   allProjectsJson {
     edges {
       node {
+        id
         title
         subtitle
         description
