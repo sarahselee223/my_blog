@@ -1,19 +1,5 @@
 [
     {
-        "title": "Book Domicile",
-        "id": "10",
-        "subtitle": "A new way to stay for business",
-        "description": "AAAI made this app to practice building React Native iOS app. I worked on fetching data from APIs, utilizing a 3rd party library, and styling an app.",
-        "takeAway": "BBB",
-        "technology": "Swift, AWS Cognito, GraphQL, Xcode, CocoaPods, Matterport",
-        "image": "../images/domicileImage.jpg",
-        "icon": "../images/travel.png",
-        "videoSrcURL": "",
-        "videoTitle": "",
-        "demo": "https://apps.apple.com/us/app/book-domicile/id1372934088",
-        "github":  ""
-    },
-    {
         "title": "My Pet Pal",
         "id": "9",
         "subtitle": "iOS mobile app to keep track of your puppy's activities and well-being.",

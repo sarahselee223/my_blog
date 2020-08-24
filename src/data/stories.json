@@ -1,12 +1,5 @@
 [
     {
-        "title": "How to implement AWS Cognito to iOS app",
-        "id": "3",
-        "date": "01-20-2020",
-        "image": "../images/cognitoImage.png",
-        "description": "<p>I learned this term during my second month at Galvanize. Before even hearing of imposter syndrome, I had already experienced feeling like a fraud when I couldn't solve problems, but I believed that it was just me. Throughout my whole life, I have never been good at mathematics. Seeing other people's genius solutions for some algorithm problems that I couldn’t solve always made me feel shitty about myself. On top of that, it was very hard for me to fully understand abstract computer science concepts in English. I can't even explain how awkward the silence was when I couldn't answer some seemingly easy questions in class.</p> <p>I heard of imposter syndrome for the first time from one of my classmates. I was talking to this classmate about my extreme frustration with coding and I heard that another classmate was experiencing the same feelings as me. It was pretty shocking to me that this is actually a really prominent concept among software engineers. </p><p>There are many articles about how to overcome imposter syndrome. For me, it is really helpful to keep track of the problems that I solve on my own even though they are really small and minor problems. Focusing on what I build instead of focusing on how good I am has also helped me to forget about my frustration with feeling like I'm behind. Angela Duckworth’s famous book Grit explains why we should focus on persistence, undaunted courage and a refusal to back down in the face of adversity rather than our natural talent. Lastly, being surrounded by positive people who strongly believe in me has been helpful for me to overcome imposter syndrome. I have met some software engineers who looked down on me for many reasons. Life is short. It makes me a better person if I do something positive rather than spending my precious time being resentful of someone I will never see again. I am really lucky to have people in my life who support and believe in me. I hope that I can be one of those supporters for someone else who is facing similar challenges.</p>"
-    },
-    {
         "title": "Imposter Syndrome",
         "id": "2",
         "date": "05-16-2019",

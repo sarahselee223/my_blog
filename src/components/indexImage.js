@@ -21,6 +21,16 @@ class IndexImage extends Component {
         })
     }
 
+    content = () => {
+        return (
+            <>
+                <p> Hi, I'm Sarah. I love challenging myself and learning new things. I am currently working at a company called <a className={styles.linkFont} href="https://www.kensci.com/">Kensci</a>. We solve problems in healthcare field by using technologies and data science. I am working on improving internal and external clients’ experiences on using our products from end-to-end with various technologies. </p>
+                <p> Prior to working at Kensci, I worked on an iOS application called “Book Domicile” as a mobile engineer at Domicile. I maintained, updated, and improved the iOS app using Xcode and Swift. You can check out the app at <a className={styles.linkFont} href="https://apps.apple.com/us/app/book-domicile/id1372934088">iOS App Store</a>. </p>
+                <p> I would like to share my story and my journey of learning through this website. I have faced many unique challenges because I learned how to code in English, which is my second language (I call this "language inception 🤯"). I hope my <Link to="/stories/" className={styles.linkFont}>Story</Link> can be helpful to anyone who is facing similar challenges! :)</p>
+            </>
+        );
+    }
+
     render(){
         return (
             <div className={styles.container}>
@@ -47,18 +57,14 @@ class IndexImage extends Component {
                     }
                 </div>
                 <span className={styles.myName}> Sarah S. Lee</span>
-                <span className={styles.myTitle}> Software Developer </span>
+                <span className={styles.myTitle}> Software Engineer </span>
                 {this.state.openIntro ? 
                     typeof window !== 'undefined' && window.innerWidth < 520 ? 
                       <div className ={styles.introContainerMobile}>
-                        <p> Hi, I'm Sarah. I love challenging myself and learning new things. I am currently working on an iOS application called “Book Domicile” as a software engineer at Domicile. I maintain, update, and improve the iOS app using Xcode and Swift. You can check out the app at <a className={styles.linkFont} href="https://apps.apple.com/us/app/book-domicile/id1372934088">iOS App Store</a>. </p>
-                        <p> I also worked on a mobile application called "My Pet Pal." You can check out my previous and current personal projects at <Link to="/projects/" className={styles.linkFont}>Projects</Link>. I write lots of JavaScript and have a lot of passion for web and mobile development. I like building interactive application, UI/UX, React, Redux and Native iOS apps. </p>
-                        <p> I would like to share my story and my journey of learning through this website. I have faced many unique challenges because I learned how to code in English, which is my second language (I call this "language inception"). I hope my <Link to="/stories/" className={styles.linkFont}>Story</Link> can be helpful to anyone who is facing similar challenges. </p>
+                        {this.content()}
                       </div>
                     : <div className ={styles.introContainer}>
-                        <p> Hi, I'm Sarah. I love challenging myself and learning new things. I am currently working on an iOS application called “Book Domicile” as a software engineer at Domicile. I maintain, update and improve the iOS app using Xcode and Swift. You can check out the app at <a className={styles.linkFont} href="https://apps.apple.com/us/app/book-domicile/id1372934088">iOS App Store</a>. </p>
-                        <p> I also worked on a mobile application called "My Pet Pal." You can check out my previous and current personal projects at <Link to="/projects/" className={styles.linkFont}>Projects</Link>. I write lots of JavaScript and have a lot of passion for web and mobile development. I like building interactive application, UI/UX, React, Redux and Native iOS apps. </p>
-                        <p> I would like to share my story and my journey of learning through this website. I have faced many unique challenges because I learned how to code in English, which is my second language (I call this "language inception"). I hope my <Link to="/stories/" className={styles.linkFont}>Story</Link> can be helpful to anyone who is facing similar challenges. </p>
+                        {this.content()}
                     </div> : null
                 }
 
