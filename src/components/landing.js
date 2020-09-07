@@ -87,7 +87,7 @@ class Landing extends Component {
                 </div>
                 {!this.state.openIntro ? 
                 <div>
-                    <p className={styles.learningText}>currently learning about 3d animation using three.js</p>
+                    <p className={styles.learningText}>currently learning about 2d animation</p>
                 </div>: null}
             </div>
         )
