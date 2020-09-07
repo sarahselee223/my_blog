@@ -3,34 +3,34 @@ import PropTypes from "prop-types"
 import React from "react"
 import styles from '../styles/header.module.css'
 
-const Header = ({ siteTitle }) => (
-  <header className={styles.container}>
-    <div className={styles.margin}>
-      <h4 className={styles.titleStyle}>
-        {typeof window !== 'undefined' && window.innerWidth < 500 ?
-          <div>
-            <Link to="/" className={styles.subFontMobile}>{siteTitle}</Link>
-            <Link to="/projects/" className={styles.subFontMobile}>Projects</Link>
-            <Link to="/stories/" className={styles.subFontMobile}>Stories</Link>
-          </div>
-        :
-          <div>
-            <Link to="/" className={styles.subFont}>{siteTitle}</Link>
+const Header = () => (
+  <div className={styles.container}>   
+    {typeof window !== 'undefined' && window.innerWidth < 500 ?
+      <div className={styles.headerContainer}>
+        <div className={styles.titleContainer}>
+            <Link to="/" className={styles.subFont}>Home</Link>
+        </div>
+        <div className={styles.titleContainer}>
             <Link to="/projects/" className={styles.subFont}>Projects</Link>
+        </div>
+        <div className={styles.titleContainer}>
             <Link to="/stories/" className={styles.subFont}>Stories</Link>
-          </div>
-        }
-      </h4>
+        </div>
     </div>
-  </header>
+    :
+      <div className={styles.headerContainer}>
+        <div className={styles.titleContainer}>
+            <Link to="/" className={styles.subFont}>Home</Link>
+        </div>
+        <div className={styles.titleContainer}>
+            <Link to="/projects/" className={styles.subFont}>Projects</Link>
+        </div>
+        <div className={styles.titleContainer}>
+            <Link to="/stories/" className={styles.subFont}>Stories</Link>
+        </div>
+      </div>
+    }
+  </div>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

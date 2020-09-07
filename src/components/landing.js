@@ -7,7 +7,7 @@ import githubLogo from '../images/github.png'
 import linkedinLogo from '../images/linkedin.png'
 import emailLogo from '../images/email.png'
 
-class IndexImage extends Component {
+class Landing extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -87,10 +87,10 @@ class IndexImage extends Component {
                 </div>
                 {!this.state.openIntro ? 
                 <div>
-                    <p className={styles.learningText}>currently learning about Swift, Xcode and GraphQL</p>
+                    <p className={styles.learningText}>currently learning about 3d animation using three.js</p>
                 </div>: null}
             </div>
         )
     }
 }
-export default IndexImage
+export default Landing
