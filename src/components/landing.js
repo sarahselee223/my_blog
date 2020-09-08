@@ -7,11 +7,14 @@ import githubLogo from '../images/github.png'
 import linkedinLogo from '../images/linkedin.png'
 import emailLogo from '../images/email.png'
 
+const greeting = ['Hi! there👋', 'Press here👇', 'Welcome! 👽']
+
 class Landing extends Component {
     constructor(props){
         super(props)
         this.state = {
-            openIntro: false
+            openIntro: false,
+            mouseHovered: false
         }
     }
 
@@ -19,6 +22,23 @@ class Landing extends Component {
         this.setState({
             openIntro: !this.state.openIntro
         })
+    }
+
+    onMouseEnter = () => {
+        this.setState({
+            mouseHovered: true
+        })
+    }
+
+    onMouseLeave = () => {
+        this.setState({
+            mouseHovered: false
+        })
+    }
+
+    pickGreetingStmt = () => {
+        const randomInt = Math.floor(Math.random() * Math.floor(greeting.length))
+        return greeting[randomInt]
     }
 
     content = () => {
@@ -34,7 +54,17 @@ class Landing extends Component {
     render(){
         return (
             <div className={styles.container}>
-                <div className={styles.imageContainer}>
+                {this.state.mouseHovered 
+                    ? 
+                        (<div>
+                            <div className={styles.bubble}>{this.pickGreetingStmt()}</div>
+                            <div className={styles.pointer}></div>
+                        </div>
+                        )
+                        : <div className={styles.addHeight}></div>
+                }
+
+                <div className={styles.imageContainer} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
                 {this.state.openIntro ? 
                     <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" onClick={() => this.toggleIntro()}>
                         <defs>
@@ -87,7 +117,7 @@ class Landing extends Component {
                 </div>
                 {!this.state.openIntro ? 
                 <div>
-                    <p className={styles.learningText}>currently learning about 3d animation using three.js</p>
+                    <p className={styles.learningText}>currently learning about MicroSoft Auare </p>
                 </div>: null}
             </div>
         )

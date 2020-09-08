@@ -20,7 +20,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 17%;
     cursor: pointer;
     margin-bottom: 1%;
 }
@@ -59,7 +58,6 @@
     font-size: 25px;
     font-weight: bold;
 }
-
 .myTitle {
     font-size: 17px;
     font-family: 'Avenir','Helvetica','Arial',sans-serif;
@@ -81,6 +79,40 @@ svg {
 }
 .linkFont{
     color: rgb(78, 132, 233)
+}
+
+.bubble {
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+	height: 30px;
+	min-width: 120px;
+    background: #34a8eb;
+    color: white;
+	margin: 0 auto;
+	border-radius: 15px;
+	margin-top: 50px;
+    text-align: center;
+    z-index: 2;
+    font-family: 'Avenir','Helvetica','Arial',sans-serif;
+    font-size: 15px;
+}
+
+.pointer {
+	height: 20px;
+    width: 20px;
+    background: #34a8eb;
+	margin: 0 auto;
+	transform: rotate(45deg);
+	border-radius: 0 0 2px 0;
+	margin-top: -18px;
+	position: relative;
+    left: calc(0.5vw - 33px);
+    z-index: -1;
+}
+.addHeight {
+    height: 82px;
 }
 
 @keyframes dash {
