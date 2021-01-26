@@ -117,7 +117,7 @@ class Landing extends Component {
                 </div>
                 {!this.state.openIntro ? 
                 <div>
-                    <p className={styles.learningText}>currently learning about Microsoft Auare </p>
+                    <p className={styles.learningText}>Currently learning about PWAs</p>
                 </div>: null}
             </div>
         )
