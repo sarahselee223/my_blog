@@ -44,9 +44,9 @@ class Landing extends Component {
     content = () => {
         return (
             <>
-                <p> Hi, I'm Sarah. I love challenging myself and learning new things. I am currently working at a company called <a className={styles.linkFont} href="https://www.kensci.com/">Kensci</a>. We solve problems in healthcare field by using technologies and data science. I am working on improving internal and external clients’ experiences on using our products from end-to-end with various technologies. </p>
-                <p> Prior to working at Kensci, I worked on an iOS application called “Book Domicile” as a mobile engineer at Domicile. I maintained, updated, and improved the iOS app using Xcode and Swift. You can check out the app at <a className={styles.linkFont} href="https://apps.apple.com/us/app/book-domicile/id1372934088">iOS App Store</a>. </p>
-                <p> I would like to share my story and my journey of learning through this website. I have faced many unique challenges because I learned how to code in English, which is my second language (I call this "language inception 🤯"). I hope my <Link to="/stories/" className={styles.linkFont}>Story</Link> can be helpful to anyone who is facing similar challenges! :)</p>
+                <p> Hi, I'm Sarah. I love challenging myself and learning new things. I am currently working at a company called <a className={styles.linkFont} href="https://apps.apple.com/us/app/doctor-on-demand/id591981144">Doctor on Demand</a>. We solve problems in healthcare field by using technologies. I am working on their iOS app to help people virtually meet doctors and contact with people when they needed. </p>
+                <p> Prior to working at Doctor on demand, I worked as a full stack software engineer at KenSci, and iOS engineer at Book Domicile. </p>
+                <p> I would like to share my story and my journey of learning through this space. I have faced many unique challenges because I learned how to code in English, which is my second language (I call this "language inception 🤯"). I hope my <Link to="/stories/" className={styles.linkFont}>Story</Link> can be helpful to anyone who is facing similar challenges! :)</p>
             </>
         );
     }
