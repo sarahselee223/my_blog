@@ -44,7 +44,7 @@ class Landing extends Component {
     content = () => {
         return (
             <>
-                <p> Hi, I'm Sarah. I love challenging myself and learning new things. I am currently working at a company called <a className={styles.linkFont} href="https://apps.apple.com/us/app/doctor-on-demand/id591981144">Doctor on Demand</a>. We solve problems in healthcare field by using technologies. I am working on their iOS app to help people virtually meet doctors and contact with people when they needed. </p>
+                <p> Hi, I'm Sarah. I love challenging myself and learning new things. I am currently working at a company called <a className={styles.linkFont} href="https://www.doctorondemand.com/">Doctor on Demand</a>. We solve problems in healthcare field by using technologies. I am working on their <a className={styles.linkFont} href="https://apps.apple.com/us/app/doctor-on-demand/id591981144">iOS app</a> to help people virtually meet various providers when they needed. </p>
                 <p> Prior to working at Doctor on demand, I worked as a full stack software engineer at KenSci, and iOS engineer at Book Domicile. </p>
                 <p> I would like to share my story and my journey of learning through this space. I have faced many unique challenges because I learned how to code in English, which is my second language (I call this "language inception 🤯"). I hope my <Link to="/stories/" className={styles.linkFont}>Story</Link> can be helpful to anyone who is facing similar challenges! :)</p>
             </>
@@ -117,7 +117,7 @@ class Landing extends Component {
                 </div>
                 {!this.state.openIntro ? 
                 <div>
-                    <p className={styles.learningText}>Currently learning about PWAs</p>
+                    <p className={styles.learningText}>Currently learning about iOS development</p>
                 </div>: null}
             </div>
         )
