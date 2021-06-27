@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "gatsby"
 import styles from '../styles/index.module.css'
 import meBack from '../images/me-back.jpg'
-import meFront from '../images/frontme.jpg'
+import meFront from '../images/me-front.jpeg'
 import githubLogo from '../images/github.png'
 import linkedinLogo from '../images/linkedin.png'
 import emailLogo from '../images/email.png'

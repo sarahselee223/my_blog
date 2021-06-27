@@ -33,12 +33,11 @@
     border-bottom-color: white;
 }
 .titleContainer:hover {
-    transition: 0.5s ease-in-out;
-    border-width: 0.5px;
+    transition: 0.7s ease;
+    border-width: 0.9px;
     border-top-style: solid;
     border-top-color: #b9b9b9;
     border-bottom-style: solid;
-    border-bottom-color: #b9b9b9;
 }
 .subFont {
     font-family: 'Work Sans', sans-serif; 
